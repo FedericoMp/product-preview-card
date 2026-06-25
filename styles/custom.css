@@ -1,0 +1,9 @@
+/* Card container */
+.card-container {
+  margin: 4.5rem 0;
+  width: min(85vw, 960px);
+  color: var(--col-black);
+  border-radius: var(--bor-rad);
+  padding: clamp(2rem, 3vw, 3.25rem);
+  background-color: var(--col-white);
+}
