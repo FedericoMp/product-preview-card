@@ -1,9 +1,64 @@
 /* Card container */
 .card-container {
   margin: 4.5rem 0;
-  width: min(85vw, 960px);
+  /* width: min(85vw, 960px); */
   color: var(--col-black);
   border-radius: var(--bor-rad);
-  padding: clamp(2rem, 3vw, 3.25rem);
   background-color: var(--col-white);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/image-product-mobile.jpg");
+}
+
+.card-content {
+  padding: clamp(2rem, 3vw, 3.25rem);
+}
+
+.card-content .category {
+  color: var(--col-grey);
+  text-transform: uppercase;
+}
+
+.card-content p {
+  color: var(--col-grey);
+}
+
+.card-content .card-prices {
+  display: flex;
+  align-items: center;
+}
+
+.card-content .card-prices h2.price {
+  color: var(--col-green-500);
+  margin-right: 1.5rem;
+}
+
+.card-content .card-prices span {
+  text-decoration: line-through;
+}
+
+.card-content button.card-btn {
+  border-radius: .4rem;
+  border-color: transparent;
+  color: var(--col-white);
+  background-color: var(--col-green-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.card-content button.card-btn:hover {
+  background-color: var(--col-green-700);
+}
+
+.card-content button.card-btn img.icon-cart {
+  margin-right: .8rem;
 }
