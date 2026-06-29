@@ -87,10 +87,10 @@ header.top {
     z-index: 1;
     position: absolute;
     text-align: center;
-    color: var(--col-stone-900);
+    color: var(--col-black);
 }
 
-header.top h1#headline {
+header.top h1 {
     font-size: 2rem;
     font-weight: 100;
 }
@@ -101,12 +101,12 @@ footer.attribution {
     font-size: small;
     text-align: center;
     position: absolute;
-    color: var(--col-stone-900);
+    color: var(--col-black);
 }
 
 footer.attribution a {
     font-size: small;
-    color: var(--col-stone-900);
+    color: var(--col-black);
 }
 
 /* Animation: to hide UI elements */
