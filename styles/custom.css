@@ -1,6 +1,5 @@
 /* Card container */
 .card-container {
-  margin: 4.5rem 0;
   width: min(80vw, 320px);
   color: var(--col-black);
   border-radius: var(--bor-rad);

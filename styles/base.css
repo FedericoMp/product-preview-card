@@ -54,10 +54,6 @@ html, body {
   overflow: auto;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 html, body, main {
     flex: 1;
     display: flex;
@@ -67,10 +63,20 @@ html, body, main {
 }
 
 header.top {
-    top: 1rem;
-    z-index: 1;
-    position: absolute;
     text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  html, body {
+    height: 100%; 
+  }
+  .hide {
+    display: inline;
+  } 
 }
 
 p, span {
@@ -83,24 +89,21 @@ button {
 
 /* Header */
 header.top {
-    top: 0;
-    z-index: 1;
-    position: absolute;
     text-align: center;
     color: var(--col-black);
 }
 
-header.top h1 {
+header.top h1,
+#headline span {
     font-size: 2rem;
     font-weight: 100;
 }
 
 /* Attribution */
 footer.attribution {
-    bottom: 1rem;
+    margin: 1rem 0;
     font-size: small;
     text-align: center;
-    position: absolute;
     color: var(--col-black);
 }
 
