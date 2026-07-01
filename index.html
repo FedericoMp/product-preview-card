@@ -15,30 +15,33 @@
 </head>
 <body class="overflow-auto">
   <!-- Header -->
-  <header class="top animate-fade-out">
-    <h1 id="headline">Product <span class="hide">Preview</span> Card</h1>
+  <header class="hide">
+    <h1 id="headline">Product Preview Card</h1>
   </header>
   <!-- Main -->
   <main>
     <section class="card-container">
-      <div class="card-image"></div>
+      <picture class="card-image">
+        <source media="(width < 720px)" srcset="images/image-product-mobile.jpg" />
+        <img src="images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum" />
+      </picture>
       <div class="card-content">
         <span class="category typo-montserrat-500">Perfume</span>
         <h2 class="title typo-fraunces-700">Gabrielle Essence Eau De Parfum</h2>
         <p class="typo-montserrat-500">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
         <div class="card-prices">
           <h2 class="price typo-fraunces-700">$149.99</h2>
-          <span class="typo-montserrat-500">$169.99</span>
+          <del class="typo-montserrat-500">$169.99</del>
         </div>
         <button class="card-btn typo-montserrat-500">
-          <img src="images/icon-cart.svg" class="icon-cart" alt="Icon Cart" title="Icon Cart"/>
+          <img src="images/icon-cart.svg" class="icon-cart" alt="Icon Cart"/>
           Add to Cart
         </button>
       </div>
     </section>
   </main>
   <!-- Footer -->
-  <footer class="attribution animate-fade-out">
+  <footer class="attribution hide">
     Challenge by <a href="https://www.frontendmentor.io/challenges/..." target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/FedericoMp" target="_blank">@FedericoMp</a>.
   </footer>
